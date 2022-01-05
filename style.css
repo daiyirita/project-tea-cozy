@@ -8,6 +8,8 @@ head, body {
     margin: 0;
 }
 
+/* header */
+
 header {
     height: 69px;
     background-color: black;
@@ -16,32 +18,111 @@ header {
     width: 100%;
     z-index: 1;
     top: 0;
-}
-
-.on-top {
     display: flex;
+    justify-content: space-between;
 }
 
 #logo {
     align-items: flex-start;
+    height: 50px;
+    margin: 9px 10px;
+    width: auto;
 }
 
-nav {
+nav li {
+    display: inline-flex;
     align-items: flex-end;
 }
 
-li {
-    display: inline-block;
+li a {
+    color: seashell;
+    text-decoration: underline;
+    margin: 0 1rem;
 }
+
+/* main */
 
 main {
+    width: 100%;
+    height: auto;
     position: relative;
     top: 69px;
-    margin: 0 50px 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
+#mission {
+    width: 1200px;
+    height: 700px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./resources/img-mission-background.jpg");
+    background-size: cover;
+}
+
+.statement {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+#featured-tea {
+    width: 1000px;
+    height: auto;
+    margin-top: 69px;
+}
+
+figure {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+figure img {
+    height: 200px;
+    width: 300px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url(./resources/img-locations-background.jpg);
+    background-size: cover;
+    margin-top: 69px;
+    justify-content: center;
+}
+
+.loc {
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 15px;
+    background-color: black;
+    opacity: 1;
+    display: inline-flex;
+}
+
+#contact {
+    height: 200px;
+    width: auto;
+    margin: 69px auto;
+}
+
+/* footer */
 footer {
     bottom: 0;
     text-align: left;
     margin-left: 20px;
 }
+
+/* media query*/
+
