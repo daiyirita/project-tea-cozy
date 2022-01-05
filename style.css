@@ -5,14 +5,17 @@ head, body {
     background-color: black;
     opacity: 0.9;
     text-align: center;
+    margin: 0;
 }
 
 header {
     height: 69px;
+    background-color: black;
     border-bottom: 1px solid seashell;
     position: fixed;
     width: 100%;
     z-index: 1;
+    top: 0;
 }
 
 .on-top {
@@ -34,4 +37,11 @@ li {
 main {
     position: relative;
     top: 69px;
+    margin: 0 50px 60px;
+}
+
+footer {
+    bottom: 0;
+    text-align: left;
+    margin-left: 20px;
 }
